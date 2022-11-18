@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+</head>
+
+<body style="justify-content: center;">
+    <!-- intro and start the quiz -->
+    <main class="container" id="intro">
+        <section>
+            <h1>Coding Quiz</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by 15 seconds!
+            </p>
+            <button class="button" id="start">Start Quiz</button>
+        </section>
+    </main>
+
+    <!-- Quiz -->
+    <section class="container" id="quiz">
+
+        <div>
+            <h1 id="question"></h1>
+            <ol>
+                <li>
+                    <button class="answerButton" id="answer1"></button>
+                </li>
+                <li>
+                    <button class="answerButton" id="answer2"></button>
+                </li>
+                <li>
+                    <button class="answerButton" id="answer3"></button>
+                </li>
+                <li>
+                    <button class="answerButton" id="answer4"></button>
+                </li>
+            </ol>
+        </div>
+        <div id="result"></div>
+        <div>
+            <h2 id="timer"></h2>
+        </div>
+    </section>
+    <!-- Show Quiz result -->
+    <section class="container" id="end">
+        <h2>You finished!</h2>
+        <h2>Your score is: </h2>
+        <h3 id="score"></h3>
+        <form id="initials">
+            <input id="initialsInput" placeholder="initials" />
+            <button class="button" id="submitInitials">Submit</button>
+        </form>
+        <button class="button" id="showHighScores"> Show High Scores</button>
+        <table id="scoreData">
+                <tr>
+                    <th>Initials</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td id="initial-0"></td>
+                    <td id="score-0"></td>
+                </tr>
+                <tr>
+                    <td id="initial-1"></td>
+                    <td id="score-1"></td>
+                </tr>
+                <tr>
+                    <td id="initial-2"></td>
+                    <td id="score-2"></td>
+                </tr>
+                <tr>
+                    <td id="initial-3"></td>
+                    <td id="score-3"></td>
+                </tr>
+                <tr>
+                    <td id="initial-4"></td>
+                    <td id="score-4"></td>
+                </tr>
+                <tr>
+                    <td id="initial-5"></td>
+                    <td id="score-5"></td>
+                  </tr>
+        </table>
+    </section>
+</body>
+
+</html>
